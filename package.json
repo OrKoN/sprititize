@@ -1,0 +1,11 @@
+{
+  "name": "spritize",
+  "description": "spritize",
+  "author": "Alex Rudenko <alexei.rudenko@gmail.com>",
+  "version": "0.0.1",
+  "main" : "./index.js",
+  "dependencies": {
+      "simple-imagemagick" : "*",
+      "thunkify" : "*"
+  }
+}
