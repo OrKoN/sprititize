@@ -12,6 +12,7 @@ function * sprititize(data, opts) {
     imgs.push('-geometry');
     imgs.push('+0+0');
     imgs.push(opts.output)
+    console.log(imgs);
     yield montageThunk(imgs);
 }
 
