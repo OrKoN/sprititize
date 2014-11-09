@@ -4,7 +4,7 @@ var montageThunk = thunkify(im.montage);
 
 function * sprititize(data, opts) {
     var imgs = [];
-    var len = imgs.length;
+    var len = data.length;
     for (var i = 0; i < len; i++) {
         imgs.push(data.src);
     }
