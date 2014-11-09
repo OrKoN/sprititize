@@ -1,4 +1,5 @@
 var im = require('simple-imagemagick');
+var thunkify = require('thunkify');
 var montageThunk = thunkify(im.montage);
 
 function * sprititize(data, opts) {
