@@ -6,7 +6,7 @@ function * sprititize(data, opts) {
     var imgs = [];
     var len = data.length;
     for (var i = 0; i < len; i++) {
-        imgs.push(data.src);
+        imgs.push(data[i].src);
     }
     imgs.push('-tile', '1x' + len);
     imgs.push('-geometry');
