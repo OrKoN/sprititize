@@ -3,17 +3,16 @@ var thunkify = require('thunkify');
 var montageThunk = thunkify(im.montage);
 
 function * sprititize(data, opts) {
-    var imgs = [];
+    var cmd = [];
     var len = data.length;
     for (var i = 0; i < len; i++) {
-        imgs.push(data[i].src);
+        cmd.push(data[i].src);
     }
-    imgs.push('-tile', '1x' + len);
-    imgs.push('-geometry');
-    imgs.push('+0+0');
-    imgs.push(opts.output)
-    console.log(imgs);
-    yield montageThunk(imgs);
+    cmd.push('-tile', '1x' + len);
+    cmd.push('-geometry');
+    cmd.push('+0+0');
+    cmd.push(opts.output)
+    yield montageThunk(cmd);
 }
 
 module.exports = sprititize;
