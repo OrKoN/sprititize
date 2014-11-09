@@ -1,6 +1,6 @@
 {
-  "name": "spritize",
-  "description": "spritize",
+  "name": "sprititize",
+  "description": "sprititize",
   "author": "Alex Rudenko <alexei.rudenko@gmail.com>",
   "version": "0.0.1",
   "main" : "./index.js",
